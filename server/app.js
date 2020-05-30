@@ -67,9 +67,7 @@ class Server {
 
   // eslint-disable-next-line class-methods-use-this
   async defineModels() {
-    await db.sequelize.sync({
-      // force: true,
-    });
+    await db.sequelize.sync();
   }
 
   defineRoutes() {

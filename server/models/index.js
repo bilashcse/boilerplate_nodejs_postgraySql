@@ -37,6 +37,7 @@ Object.keys(db).forEach((modelName) => {
   }
 });
 
+db.Sequelize = Sequelize;
 db.sequelize = sequelize;
 
 db.closeConnection = () => {
